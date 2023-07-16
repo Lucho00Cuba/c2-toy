@@ -11,4 +11,6 @@ COPY src/ /opt/c2
 
 RUN pip install -r /opt/c2/requirements.txt
 
+WORKDIR /opt/c2/
+
 CMD ["/usr/local/bin/python", "/opt/c2/ctx.py"]

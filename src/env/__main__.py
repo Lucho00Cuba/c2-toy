@@ -5,7 +5,7 @@ class App():
     # common
     name = environ.get('APP_NAME', 'c2-toy')
     log_level = environ.get('APP_LOG_LEVEL', 'DEBUG')
-    root_dir = f"{getcwd()}/src"
+    root_dir = f"{getcwd()}"
 
     # server
     server_host = environ.get('SERVER_HOST', '0.0.0.0') 
